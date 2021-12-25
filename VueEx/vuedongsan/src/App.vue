@@ -4,34 +4,34 @@
       <a href="" v-for="(item, idx) in menu" :key="idx">{{item}}</a>
     </div>
        
-    <div v-for="(item, idx) in products" :key="idx">
+    <!-- 원래 이거 따로 받아야하는거 아닌가 return하면 -->
+    <div v-for="(item, idx) in products" :key="item">
       <h4>{{item}}</h4>
-      <p>{{(idx+1)*30}} 만원</p>
-      <button @click="increase" :id="idx">허위매물신고</button>
-      <span >신고수 : {{ count[idx] }}</span>
+      <p>{{price[idx]}} 만원</p>
+      <button @click="increase">허위매물신고</button>
+      <span :id="idx">신고수 : {{ count[idx] }}</span>
     </div>
-
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'App',
   data () {
     return {
       products: ['역삼동원룸', '천호동원룸', '마포구원룸'],
       menu: ['Home', 'Shop', 'About'],
-      count: [0, 0, 0],
+      price: [50, 100, 70],
+      count: [0, 0, 0]
     }
   },
   components: {
   },
   methods: {
     increase : function (e){
-      var id = e.target.id;
-      console.log(this.count[id])
-      this.count[id] = this.count[id] +1 ;
+      let id = e.target.nextElementSibling.id;
+      //console.log(this.count[id]++)
+      console.log(id);
     }
   }
 }
@@ -44,7 +44,8 @@ export default {
 
 <style>
 body{
-  margin:0'
+  margin: 0;
+  padding: 0;
 }
 div{
   box-sizing: border-box;
