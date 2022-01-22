@@ -1,4 +1,4 @@
-package study;
+package javastudy;
 
 import java.util.Scanner;
 
@@ -16,6 +16,7 @@ public class Ex1300 {
 		} else {
 			System.out.println("<");
 		}
+		in.close();
 
 	}
 

@@ -1,4 +1,4 @@
-package study;
+package javastudy;
 
 import java.util.Scanner;
 
@@ -19,5 +19,7 @@ public class Ex9498 {
 		} else {
 			System.out.println("F");
 		}
+
+		in.close();
 	}
 }

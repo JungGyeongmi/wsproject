@@ -1,4 +1,4 @@
-package study;
+package javastudy;
 
 import java.util.Scanner;
 
@@ -16,5 +16,7 @@ public class Ex14681 {
 			if(y>0) System.out.println("1");
 			else System.out.println("4");
 		}
+
+		in.close();
 	}
 }

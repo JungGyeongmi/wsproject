@@ -1,4 +1,4 @@
-package study;
+package javastudy;
 
 import java.util.Scanner;
 
@@ -10,5 +10,7 @@ public class Ex2753 {
 		
 		if((year%4==0 && year%100!=0) || (year%400==0)) System.out.println("1");
 		else System.out.println("0");
+		in.close();
 	}
+	
 }

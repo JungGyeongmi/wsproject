@@ -1,4 +1,4 @@
-package study;
+package javastudy;
 
 public class Test1 {
 

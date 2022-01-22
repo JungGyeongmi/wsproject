@@ -1,4 +1,4 @@
-package study;
+package javastudy;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -8,18 +8,18 @@ public class Ex8958 {
 		Scanner in = new Scanner(System.in);
 		 
 		int n = in.nextInt();
-//		System.out.println("°¹¼ö"+n);
+//		System.out.println("ï¿½ï¿½ï¿½ï¿½"+n);
 		String arr[] = new String[n];
 		
 		for(int i=0; i < arr.length; i++) {
 			String s = in.next();
 			arr[i] = s;
-//			System.out.println("¹®ÀÚ¿­ÇÑÁÙ"+s);
+//			System.out.println("ï¿½ï¿½ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½"+s);
 		}
 
 		
-//		¹®ÀÚ ÂüÁ¶ ¹æ¹ý µå‰Z Ã£À½
-//		System.out.println(arr[0].subSequence(0, 2));
+//		ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½Z Ã£ï¿½ï¿½
+//		System.out.println(arr[0].subSequence(0, 2));`
 		
 		for (int i = 0; i < arr.length; i++) {
 			int score = 0;
@@ -33,6 +33,6 @@ public class Ex8958 {
 			}
 			System.out.println(score);
 		}
-		
+		in.close();
 	}
 }
