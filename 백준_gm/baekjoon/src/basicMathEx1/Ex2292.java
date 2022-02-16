@@ -29,10 +29,9 @@ public class Ex2292 {
 			}
 		}
 		
-		
 		br.close();
 		bw.flush();
 		bw.close();
-		
+
 	}
 }
